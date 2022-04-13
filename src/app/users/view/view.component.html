@@ -7,6 +7,7 @@
      <th>Phone</th>
      <th>Technologies</th>
      <th>Category</th>
+     <th>Photo</th>
     </thead>
     <tbody>
         <tr *ngFor="let items of users">           
@@ -16,5 +17,7 @@
             <td>{{items.phone}}</td>
             <td>{{items.technologies}}</td>
             <td>{{items.category}}</td>
+            <img [src]="items.photo" width="200px" height="200px">
     </tbody>
   </table>
+  

@@ -9,8 +9,10 @@ import { UserDetail } from 'src/app/UserDetail';
 })
 export class ViewComponent implements OnInit {
  users!:UserDetail[]
+ myimage:any
   constructor(private userdataservice:UserdataService) {
     this.users=this.userdataservice.userdetail;
+    
     //this.createTable()
     }
    

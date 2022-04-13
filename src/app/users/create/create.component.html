@@ -61,7 +61,7 @@
         <div class="form-group input-group">
             <div class="custom-file">
                 <label>Profile Picture</label><br>
-              <input type="file"  accept="image/*" formControlName="photo"  class="custom-file-input" id="inputGroupFile01"
+              <input type="file"   accept="image/*" (change)="onChange($event)" formControlName="photo"  class="custom-file-input" id="inputGroupFile01"
                 aria-describedby="inputGroupFileAddon01">
             </div>
         </div>
